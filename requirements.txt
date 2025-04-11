@@ -4,7 +4,9 @@ charset-normalizer==3.4.1
 Django==5.2
 djangorestframework==3.16.0
 djangorestframework_simplejwt==5.5.0
+gunicorn==23.0.0
 idna==3.10
+packaging==24.2
 psycopg2-binary==2.9.10
 PyJWT==2.9.0
 requests==2.32.3
