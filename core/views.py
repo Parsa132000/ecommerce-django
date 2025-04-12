@@ -11,6 +11,7 @@ from rest_framework import status
 import stripe
 from django.conf import settings
 from rest_framework.views import APIView
+from django.http import HttpResponse
 
 
 class CategoryViewSet(viewsets.ModelViewSet):
@@ -120,3 +121,18 @@ class StripeCheckoutView(APIView):
         )
 
         return Response({'url': checkout_session.url})
+    
+    
+    
+    
+    
+    
+    
+
+def home_view(request):
+    return HttpResponse("""
+        <h1>🛒 Welcome to Ecommerce API</h1>
+        <p>This is a Django + DRF multi-vendor e-commerce backend.</p>
+        <p>Use the <a href="/api/">API explorer</a> to try endpoints.</p>
+    """)
+    
